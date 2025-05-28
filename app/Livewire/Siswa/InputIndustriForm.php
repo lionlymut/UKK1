@@ -15,6 +15,7 @@ class InputIndustriForm extends Component
     public $alamat;
     public $kontak;
     public $email;
+    public $website;
 
 
     // Validasi form
