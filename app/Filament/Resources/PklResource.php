@@ -43,12 +43,12 @@ class PklResource extends Resource
                    
 
 
-                Forms\Components\DatePicker::make('mulai')
+                Forms\Components\DatePicker::make('tanggal_mulai')
                     ->label('Tanggal Mulai')
                     ->required(),
 
 
-                Forms\Components\DatePicker::make('selesai')
+                Forms\Components\DatePicker::make('tanggal_selesai')
                     ->label('Tanggal Selesai')
                     ->required(),
                    
@@ -65,8 +65,8 @@ class PklResource extends Resource
                 Tables\Columns\TextColumn::make('siswa.nama')->label('Siswa')->searchable(),
                 Tables\Columns\TextColumn::make('industri.nama')->label('Industri')->searchable(),
                 Tables\Columns\TextColumn::make('guru.nama')->label('Guru Pembimbing')->searchable(),
-                Tables\Columns\TextColumn::make('mulai')->label('Mulai')->sortable(),
-                Tables\Columns\TextColumn::make('selesai')->label('Selesai')->sortable(),
+                Tables\Columns\TextColumn::make('tanggal_mulai')->label('Mulai')->sortable(),
+                Tables\Columns\TextColumn::make('tanggal_selesai')->label('Selesai')->sortable(),
             ])
             ->filters([])
             ->actions([
