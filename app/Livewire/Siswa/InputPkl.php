@@ -35,7 +35,7 @@ class InputPkl extends Component
                         $g->where('nama', 'like', $searchTerm));
                 });
             })
-            ->paginate(5); // Ganti sesuai kebutuhan per halaman
+            ->paginate(1); // Ganti sesuai kebutuhan per halaman
 
         return view('livewire.siswa.input-pkl', compact('pkls'))
             ->layout('layouts.app');
