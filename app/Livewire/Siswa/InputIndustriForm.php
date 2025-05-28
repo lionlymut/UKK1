@@ -25,7 +25,7 @@ class InputIndustriForm extends Component
         'alamat' => 'required|string|max:255',
         'kontak' => 'required|string|max:255',
         'email' => 'required|email|max:255',
-        'website' => 'required|website|max:255',
+        'website' => 'required|url|max:255',
     ];
 
 
