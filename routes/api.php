@@ -2,10 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\APIGuruController;
-use App\Http\Controller\APIIndustriController;
-use App\Http\Controller\APISiswaController;
-use App\Http\Controller\APIPklController;
+use App\Http\Controllers\APIGuruController;
+use App\Http\Controllers\APIIndustriController;
+use App\Http\Controllers\APISiswaController;
+use App\Http\Controllers\APIPklController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
