@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controller\APIGuruController;
 use App\Http\Controller\APIIndustriController;
 use App\Http\Controller\APISiswaController;
+use App\Http\Controller\APIPklController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
